@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  django:
+    build: ./
+  nginx:
+    build: ./nginx
+    ports:
+    - "80:80"
